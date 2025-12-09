@@ -1,0 +1,260 @@
+{
+  "navBar": {
+    "lang": "Languages"
+  },
+  "layout": {
+    "user": {
+      "link": {
+        "help": "Help",
+        "privacy": "Privacy",
+        "terms": "Terms"
+      }
+    }
+  },
+  "menu": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "routes": "Route",
+    "ssl": "SSL",
+    "upstream": "Upstream",
+    "consumer": "Consumer",
+    "plugin": "Plugin",
+    "pluginTemplate": "Plugin Template",
+    "service": "Service",
+    "proto": "Protocol Buffers",
+    "setting": "Settings",
+    "serverinfo": "System Info",
+    "advancedFeature": "Advanced",
+    "more": "More",
+    "close": "Close"
+  },
+  "component": {
+    "global": {
+      "search": "Search",
+      "reset": "Reset",
+      "confirm": "Confirm",
+      "format": "Format",
+      "document": "Document",
+      "enable": "Enable",
+      "disable": "Disable",
+      "scope": "Scope",
+      "example": "Example",
+      "dataEditor": "Raw Data Editor",
+      "delete": "Delete",
+      "cancel": "Cancel",
+      "submit": "Submit",
+      "create": "Create",
+      "add": "Add",
+      "save": "Save",
+      "edit": "Configure",
+      "view": "View",
+      "duplicate": "Duplicate",
+      "manage": "Manage",
+      "update": "Update",
+      "get": "Get",
+      "editPlugin": "Configure plugin",
+      "loading": "Loading",
+      "list": "List",
+      "description": "Description",
+      "descriptionRequired": "Please enter the description",
+      "labels": "Labels",
+      "version": "Version",
+      "operation": "Operation",
+      "pleaseEnter": "Please Enter",
+      "pleaseChoose": "Please Choose",
+      "pleaseCheck": "Please Check",
+      "connectionTimeout": "Connection Timeout",
+      "sendTimeout": "Send Timeout",
+      "receiveTimeout": "Receive Timeout",
+      "name": "Name",
+      "id": "ID",
+      "updateTime": "Update Time",
+      "copy": "Copy",
+      "copySuccess": "Copy Successfully",
+      "copyFail": "Copy Failed",
+      "noConfigurationRequired": "No configuration required",
+      "invalidYaml": "Invalid Yaml data",
+      "invalidJson": "Invalid Json data",
+      "nameGloballyUnique": "Name should be globally unique",
+      "nameRule": "Only letters, numbers, - and _ are supported, and can only begin with letters",
+      "descriptionPlaceholder": "Please enter the description for this route, max 256 characters",
+      "popconfirmDelete": "Are you sure to delete this record ?",
+      "preStep": "Previous",
+      "nextStep": "Next"
+    },
+    "status": {
+      "success": "Successfully",
+      "fail": "Failed"
+    },
+    "notification": {
+      "deleteSuccess": "Deleted Successfully"
+    },
+    "steps": {
+      "basicInformation": "Basic Information",
+      "preview": "Preview",
+      "pluginConfig": "Plugin Config"
+    },
+    "user": {
+      "loginByPassword": "Username & Password",
+      "login": "Login"
+    },
+    "labelManager": "Label Manager"
+  },
+  "page": {
+    "route": {
+      "list": "Routes",
+      "create": "Create Route",
+      "edit": "Configure Route",
+      "name": {
+        "required": "Please enter the route name",
+        "placeholder": "Please enter the route name"
+      },
+      "description": "Route is the entry point of a request, which defines the matching rules between a client request and a service. A route can be associated with a service (Service), an upstream (Upstream), a service can correspond to a set of routes, and a route can correspond to an upstream object (a set of backend service nodes), so each request matching to a route will be proxied by the gateway to the route-bound upstream service.",
+      "path": {
+        "required": "Please enter a valid HTTP request path",
+        "placeholder": "Please enter the HTTP request path",
+        "label": "Path"
+      },
+      "host": "Host",
+      "remoteAddrs": "Remote Addrs",
+      "priority": "Priority",
+      "status": "Status",
+      "publish": "Publish",
+      "published": "Published",
+      "unpublished": "UnPublished",
+      "service": "Service",
+      "upstream": "Upstream",
+      "advancedMatch": "Advanced Routing Matching Conditions"
+    },
+    "ssl": {
+      "list": "SSL List",
+      "description": "The certificate is used by the gateway to process encrypted requests, which will be associated with the SNI and bound to the host name in the Route.",
+      "cert": {
+        "label": "Certificate Content",
+        "required": "Please enter the certificate",
+        "minLength": "The Certificate Content requires at least 128 characters"
+      },
+      "key": {
+        "label": "Private Key",
+        "required": "Please enter the key",
+        "minLength": "The Private Key requires at least 128 characters"
+      },
+      "expireTime": "Expiration Time",
+      "upload": "Upload Certificate"
+    },
+    "upstream": {
+      "list": "Upstream List",
+      "create": "Create Upstream",
+      "configure": "Configure Upstream",
+      "description": "The upstream list contains the created upstream services (i.e., backend services) and allows load balancing and health checking of multiple target nodes of the upstream services.",
+      "name": {
+        "required": "Please enter upstream name",
+        "unique": "Name should be unique"
+      },
+      "type": {
+        "roundrobin": "Round Robin",
+        "chash": "CHash",
+        "ewma": "EWMA",
+        "leastConn": "Least conn"
+      },
+      "nodes": "Targets",
+      "healthCheck": "Health Check"
+    },
+    "service": {
+      "list": "Service List",
+      "create": "Create Service",
+      "configure": "Configure Service",
+      "description": "A service consists of a combination of public plugin configuration and upstream target information in a route. Services are associated with Routes and Upstreams, and a service can correspond to a set of upstream nodes and can be bound by multiple routes.",
+      "name": {
+        "required": "Please enter service name"
+      }
+    },
+    "consumer": {
+      "list": "Consumer List",
+      "create": "Create Consumer",
+      "configure": "Configure Consumer",
+      "description": "Consumers are the consumers of Routes, e.g developers, end users, API calls, etc.",
+      "username": {
+        "label": "Name",
+        "required": "Please enter the Consumer's name",
+        "unique": "Name should be unique"
+      }
+    },
+    "plugin": {
+      "list": "Plugin List",
+      "marketConfig": "Global Plugin List",
+      "edit": "Configure Plugin Successfully",
+      "delete": "Delete Plugin Successfully"
+    },
+    "proto": {
+      "list": "Proto List",
+      "description": "Protocol buffers are Google's language-neutral, platform-neutral, extensible mechanism for serializing structured data.You define how you want your data to be structured once, then you can use special generated source code to easily write and read your structured data to and from a variety of data streams and using a variety of languages.The protocol buffers list contains the created proto files. When the grpc transcode plug-in is enabled, the ID can be configured to read the contents of the corresponding proto files.",
+      "create": "Create proto",
+      "edit": "Configure proto",
+      "content": "content",
+      "confirmDelete": "Are you sure to delete ?"
+    },
+    "serverInfo": {
+      "title": "System Info",
+      "selectPlaceholder": "Please select a apache apisix node",
+      "description": "The relevant plugin needs to be enabled to report server info.",
+      "link": "How to enable?",
+      "dashboardInfo": "Dashboard",
+      "nodeInfo": "APISIX Nodes"
+    },
+    "setting": {
+      "title": "Setting",
+      "updateSuccess": "Update Configuration Successfully",
+      "grafanaURL": {
+        "label": "Grafana Address",
+        "help": "Grafana address should begin with HTTP or HTTPS",
+        "error": "Address is invalid"
+      }
+    }
+  },
+  "plugin": {
+    "tip1": "NOTE: After customizing the plugin, you need to update schema.json.",
+    "tip2": "How to update?",
+    "authentication": "Authentication",
+    "security": "Security",
+    "traffic": "Traffic Control",
+    "serverless": "Serverless",
+    "observability": "Observability",
+    "other": "Other",
+    "all": "All",
+    "form": "Form",
+    "editor": "Plugin Editor",
+    "noConfigurationRequired": "Doesn't need configuration"
+  },
+  "upstream": {
+    "type": {
+      "node": "Node",
+      "serviceDiscovery": "Service Discovery"
+    },
+    "discoveryType": {
+      "dns": "DNS",
+      "consul": "Consul",
+      "consulKv": "Consul KV",
+      "nacos": "Nacos",
+      "eureka": "Eureka",
+      "kubernetes": "Kubernetes"
+    },
+    "scheme": {
+      "http": "HTTP",
+      "https": "HTTPS",
+      "grpc": "gRPC",
+      "grpcs": "gRPCs"
+    },
+    "passHost": {
+      "pass": "Keep the same Host from client request",
+      "node": "Use the domain or IP from Node List",
+      "rewrite": "Custom Host (Will be deprecated in the future)"
+    },
+    "healthCheck": {
+      "active": "Active",
+      "passive": "Passive",
+      "healthy": "Healthy",
+      "unhealthy": "Unhealthy"
+    }
+  }
+}
